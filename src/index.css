@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    color:#111;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    background: linear-gradient(
+    90deg,
+    rgb(149, 95, 165) 0%,
+    rgb(101, 79, 160) 100%
+  );
+  color: #fff;
+    margin: 0;
+    
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+    background: linear-gradient(
+    90deg,
+    rgb(19, 43, 94) 0%,
+    rgb(180, 36, 161) 100%
+  );
+  color: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 11px 3px rgb(0 0 0/21%);
+  }
+  
+  header a {
+    color: rgb(121, 16, 16);
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-shadow: 0 1px 0 #e0abb4, 0 2px 0 #8f2c7f,
+    0 3px 0 rgb(39, 11, 11), 0 4px 0 rgb(90, 53, 53),
+    0 20px 30px rgba(138, 66, 87, 0.972);
+    
+  }
+ 
+  
+  .search-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    margin: 0 auto;
+  }
+   
+  .search-area form {
+    background: linear-gradient(
+    90deg,
+    rgb(78, 33, 168) 0%,
+    rgb(129, 47, 47) 100%
+  );
+  
+  color: #fff;
+    width: 23rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem 1rem;
+    border: 3px solid rgb(121, 16, 16);
+    border-radius: 5px;
+  }
+   
+  .search-area label {
+    display: block;
+    color:pink;
+    font-weight: bold;
+  }
+   
+  .search-area input,
+.search-area select  {
+    margin-bottom: 1.9rem;
+    font-size: 1.2rem;
+    height: 1.9rem;
+    width: 20rem;
+    background-color: rgb(255, 179, 179);
+    border: 2px solid rgb(121, 16, 16);
+  }
+  .search-area input[type="checkbox"] {
+    width: unset;
+    height: unset;
+  }
+  
+   
+  .search-area button {
+    margin: 0 auto;
+    display: block;
+    padding: 5px 25px;
+    background: linear-gradient(
+    90deg,
+    rgb(99, 46, 206) 0%,
+    rgb(168, 77, 153) 100%
+  );
+  color: pink;
+  font-weight: bold;
+  text-transform: capitalize;
+    font-size: 1.1rem;
+    
+    border: 2px solid rgb(121, 16, 16);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .search-result{
+    background: linear-gradient(
+    90deg,
+    rgb(233, 177, 186) 0%,
+    rgb(194, 177, 122) 100%
+  );
+ 
+  border-radius: 9px;
+  margin: 1.5rem 0 ;
+  }
+
+  .video-container{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    padding: 25px 15px;
+    border-bottom: honeydew 2px solid;
+    text-decoration: none;
+  }
+
+  .video-image{
+    margin: 0 20px 0 10px;
+  }
+
+  .video-info{
+    width: 80%;
+    height: 100px;
+  }
+
+  .video-info h3{
+   font-weight: 600;
+   margin: 0;
+  }
+
+  .video-info h5{
+    font-weight: 500;
+   
+   }
+
+   .video-info h4{
+    font-weight: 500;
+   
+   }
+   .video-info p{
+    color: rgb(65, 63, 63);
+   
+   }
+   .watch-area {
+    background: linear-gradient(
+    90deg,
+    rgb(233, 177, 186) 0%,
+    rgb(194, 177, 122) 100%
+  );
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 9px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .player {
+    text-align: center;
+  }
+  
+  .watch-area .video-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  .watch-area .channel-name {
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .watch-area h1 {
+    text-align: center;
+    color: #ad343e;
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+
+  .loader {
+    text-align: center;
+  }
+  
+  .loader {
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border: 8px solid #642222;
+    border-radius: 50%;
+    border-top: 8px solid #ececec;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
